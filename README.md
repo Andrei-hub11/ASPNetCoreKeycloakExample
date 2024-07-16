@@ -25,6 +25,20 @@ Retrieves a list of all registered users.
 
 - 200 OK Returns a list of users.
 
+**Response Example**
+
+```
+{
+    "Users": [
+        {
+            "Id": "235a13ae-3757-41ef-b14d-6e090758826c",
+            "UserName": "andr11111",
+            "Email": "app_user2121112@test.com"
+        },
+    ]
+}
+```
+
 ### Register User
 
 **POST api/v1/register**
