@@ -2,11 +2,12 @@
 using KeycloackTest.DTOMappers;
 using KeycloackTest.Extensions;
 using KeycloackTest.Models;
-using NerdCritica.Domain.Utils;
-using NerdCritica.Domain.Utils.Exceptions;
+using KeycloackTest.Domain.Utils;
+using KeycloackTest.Domain.Utils.Exceptions;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text;
+using KeycloackTest.Utils;
 
 namespace KeycloackTest.Services;
 
@@ -28,7 +29,7 @@ public class AccountService : IAccountService
         return users.ToDTO();
     }
 
-    public async Task<AuthResponseDTO> RegisterUserAync(UserRegisterRequestDTO request)
+    public async Task<AuthResponseDTO> RegisterUserAsync(UserRegisterRequestDTO request)
     {
         var tokenResponse = await GetAdminTokenAsync();
 
@@ -72,7 +73,7 @@ public class AccountService : IAccountService
             RefreshToken: userToken.RefreshToken);
     }
 
-    public async Task<AuthResponseDTO> LoginUserAync(UserLoginRequestDTO request)
+    public async Task<AuthResponseDTO> LoginUserAsync(UserLoginRequestDTO request)
     {
         var userToken = await GetUserTokenAsync(request.Email, request.Password);
 
@@ -100,7 +101,6 @@ public class AccountService : IAccountService
 
         var jsonResponse = await response.Content.ReadAsStringAsync();
 
-        // However, it will return a unique user.
         var users = JsonConvert.DeserializeObject<List<User>>(jsonResponse);
 
         if (users == null || users.Count == 0)

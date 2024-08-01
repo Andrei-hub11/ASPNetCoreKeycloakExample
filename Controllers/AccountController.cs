@@ -40,7 +40,7 @@ public class AccountController : ControllerBase
     {
         try
         {
-            var user = await _accountService.RegisterUserAync(request);
+            var user = await _accountService.RegisterUserAsync(request);
 
             return Ok(user);
         }
@@ -55,7 +55,7 @@ public class AccountController : ControllerBase
     {
         try
         {
-            var user = await _accountService.LoginUserAync(request);
+            var user = await _accountService.LoginUserAsync(request);
 
             return Ok(user);
         }

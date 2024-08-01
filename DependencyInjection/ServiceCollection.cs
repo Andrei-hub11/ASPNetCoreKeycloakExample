@@ -1,6 +1,6 @@
 ﻿using KeycloackTest.Services;
 
-namespace KeycloackTest.DepencyInjection;
+namespace KeycloackTest.DependencyInjection;
 
 public static class ServiceCollection
 {

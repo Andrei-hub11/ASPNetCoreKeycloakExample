@@ -1,6 +1,6 @@
 ﻿using KeycloackTest.Utils;
 
-namespace KeycloackTest.DepencyInjection;
+namespace KeycloackTest.DependencyInjection;
 
 public static class AuthorizationExtensions
 {

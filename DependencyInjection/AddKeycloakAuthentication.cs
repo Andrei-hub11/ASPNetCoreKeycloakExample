@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
-namespace KeycloackTest.ExtensionService;
+namespace KeycloackTest.DependencyInjection;
 
 public static class KeycloakAuthenticationExtensions
 {

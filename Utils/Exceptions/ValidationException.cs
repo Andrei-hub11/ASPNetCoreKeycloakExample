@@ -1,4 +1,4 @@
-﻿namespace NerdCritica.Domain.Utils.Exceptions;
+﻿namespace KeycloackTest.Domain.Utils.Exceptions;
 
 public class ValidationException: Exception
 {

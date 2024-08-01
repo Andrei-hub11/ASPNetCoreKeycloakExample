@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
-namespace NerdCritica.Domain.Utils;
+namespace KeycloackTest.Utils;
 
 public class ThrowHelper
 {

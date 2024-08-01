@@ -5,6 +5,6 @@ namespace KeycloackTest.Services;
 public interface IAccountService
 {
     Task<IReadOnlyList<UserResponseDTO>> GetAllUsersAsync();
-    Task<AuthResponseDTO> RegisterUserAync(UserRegisterRequestDTO requestDTO);
-    Task<AuthResponseDTO> LoginUserAync(UserLoginRequestDTO request);
+    Task<AuthResponseDTO> RegisterUserAsync(UserRegisterRequestDTO requestDTO);
+    Task<AuthResponseDTO> LoginUserAsync(UserLoginRequestDTO request);
 }

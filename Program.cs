@@ -1,5 +1,4 @@
-using KeycloackTest.DepencyInjection;
-using KeycloackTest.ExtensionService;
+using KeycloackTest.DependencyInjection;
 using Newtonsoft.Json;
 using System.Net;
 
